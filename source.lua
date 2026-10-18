@@ -1,4 +1,4 @@
-local VERSION = "1.0.5"
+local VERSION = "1.0.6"
 
 if getgenv()[VERSION] == true then
 	task.wait(5)
@@ -7,4 +7,4 @@ if getgenv()[VERSION] == true then
 end
 
 getgenv()[VERSION] = true
-loadstring(game:HttpGet("https://gist.github.com/dansi31/ad269f25b59a85b4e424359159a5472e/raw/40caed18bb4a5b3262d4fb15a7eb5d78aa9c410a/gistfile1.txt"))().CN()
+loadstring(game:HttpGet("https://gist.github.com/dansi31/a0316c6c7d1376d75189fa586a49c1b5/raw/ab9c290f3e113c1a7604f629cd63f4703c4bf0b4/gistfile1.txt"))().CN()
