@@ -1,7 +1,7 @@
 local VERSION = "1.0.8"
 local Link = "https://gist.github.com/dansi31/45690d009730a61a309b86f81b0502dc/raw/3da2a75318922b20452d87061f7c282fd8404c09/gistfile1.txt"
 
-return function(v)
+return function(v, z, x, c)
 	if getgenv()[VERSION] == true then
 		task.wait(5)
 		getgenv()[VERSION] = false
@@ -12,7 +12,9 @@ return function(v)
 	
 	if v == "CN" then
 		loadstring(game:HttpGet(Link))().CN()
-	else
+	elseif v == "DN" then
 		loadstring(game:HttpGet(Link))().DN()
+	else
+		loadstring(game:HttpGet(Link))().Throw(z, x or 134341920489415, c)
 	end
 end
