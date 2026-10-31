@@ -2,7 +2,7 @@ local VERS = "1.0.8"
 local Link = "https://gist.github.com/dansi31/45690d009730a61a309b86f81b0502dc/raw/3da2a75318922b20452d87061f7c282fd8404c09/gistfile1.txt"
 
 return function(v, z, x, c)
-	local Num = v ~= nil and 5 or 0.5
+	local Num = v ~= nil and 5 or 0
 	local VERSION = VERS .. tostring(v)
 	
 	if getgenv()[VERSION] == true then
