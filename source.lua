@@ -1,10 +1,15 @@
 local VERS = "1.2.4"
 local Link = "https://gist.github.com/dansi31/45690d009730a61a309b86f81b0502dc/raw/3da2a75318922b20452d87061f7c282fd8404c09/gistfile1.txt"
 
-return function(v, z, x, c)
+return function(v, z, x, c, ver)
+	if ver == nil then
+		game.CoreGui.RobloxGui:WaitForChild("NovaUI"):Destroy()
+		loadstring(game:HttpGet("https://github.com/dansi31/Created/raw/refs/heads/main/Materials/AfterTpGUI.lua"))()
+	end
+	
 	local Num = v ~= nil and 5 or 0.01
 	local VERSION = VERS .. tostring(v)
-	
+
 	if getgenv()[VERSION] == true then
 		task.wait(Num)
 		getgenv()[VERSION] = false
@@ -12,7 +17,7 @@ return function(v, z, x, c)
 	end
 
 	getgenv()[VERSION] = true
-	
+
 	if v == "CN" then
 		loadstring(game:HttpGet(Link))().CN()
 	elseif v == "DN" then
