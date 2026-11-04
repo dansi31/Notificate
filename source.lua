@@ -7,9 +7,10 @@ return function(v, z, x, c, ver)
 		for _, v in pairs(UI:GetDescendants()) do
 			if v:IsA("TextLabel") and v.Text ==   "📌 Universal Script V2" then
 				UI:Destroy()
+				loadstring(game:HttpGet("https://github.com/dansi31/Created/raw/refs/heads/main/Materials/AfterTpGUI.lua"))()
+				return
 			end
 		end
-		loadstring(game:HttpGet("https://github.com/dansi31/Created/raw/refs/heads/main/Materials/AfterTpGUI.lua"))()
 	end
 	
 	local Num = v ~= nil and 5 or 0.01
