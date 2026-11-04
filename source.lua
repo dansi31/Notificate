@@ -3,7 +3,12 @@ local Link = "https://gist.github.com/dansi31/45690d009730a61a309b86f81b0502dc/r
 
 return function(v, z, x, c, ver)
 	if ver == nil then
-		game.CoreGui.RobloxGui:WaitForChild("NovaUI"):Destroy()
+		local UI = game.CoreGui.RobloxGui:WaitForChild("NovaUI")
+		for _, v in pairs(UI:GetDescendants()) do
+			if v:IsA("TextLabel") and v.Text ==   "📌 Universal Script V2" then
+				UI:Destroy()
+			end
+		end
 		loadstring(game:HttpGet("https://github.com/dansi31/Created/raw/refs/heads/main/Materials/AfterTpGUI.lua"))()
 	end
 	
