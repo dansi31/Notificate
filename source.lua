@@ -1,5 +1,5 @@
-local VERS = "1.2.4"
-local Link = "https://gist.github.com/dansi31/45690d009730a61a309b86f81b0502dc/raw/18968e5a346691515eb70b1da4b018dd15c2cff8/gistfile1.txt"
+local VERS = "1.3.8"
+local Link = "https://gist.github.com/dansi31/45690d009730a61a309b86f81b0502dc/raw/67521d09df61890290da2757f718f8e14893e425/gistfile1.txt"
 
 return function(v, z, x, c)
 	local Num = v ~= nil and 5 or 0.01
